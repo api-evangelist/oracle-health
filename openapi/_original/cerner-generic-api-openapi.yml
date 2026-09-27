@@ -118,19 +118,6 @@ paths:
         '404':
           $ref: '#/components/responses/NotFound'
 components:
-  responses:
-    NotFound:
-      description: The requested resource was not found.
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/FHIRResource'
-    Unauthorized:
-      description: Authentication credentials are missing or invalid.
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/FHIRResource'
   schemas:
     FHIRResource:
       type: object
@@ -141,6 +128,19 @@ components:
         id:
           type: string
       additionalProperties: true
+  responses:
+    Unauthorized:
+      description: Authentication credentials are missing or invalid.
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/FHIRResource'
+    NotFound:
+      description: The requested resource was not found.
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/FHIRResource'
   securitySchemes:
     oauth2:
       type: oauth2
