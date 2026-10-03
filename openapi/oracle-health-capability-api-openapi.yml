@@ -1,11 +1,11 @@
 openapi: 3.2.0
 info:
-  title: Oracle Health Capability API
+  title: Oracle Health Millennium Platform FHIR R4 Capability API
+  description: The Oracle Health (Cerner Millennium) FHIR R4 API provides OAuth 2.0-secured access to EHR data in the HL7 FHIR R4 format. It exposes USCDI-aligned resources such as Patient, Practitioner, Observation, Condition, MedicationRequest, DocumentReference, and Encounter for patient-access apps, provider apps, and interoperability partners. The API supports SMART on FHIR app launching and is the successor to the Cerner Millennium DSTU2 FHIR API.
   version: R4
   contact:
     name: Oracle Health Developer Program
     url: https://www.oracle.com/health/developer/
-  description: 'Operations tagged Capability across 2 of this provider''s published API definitions: cerner-oracle-health-fhir-r4-api-openapi.yml, cerner-capability-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://fhir-ehr.cerner.com/r4
   description: Cerner Millennium FHIR R4 production endpoint
@@ -32,11 +32,6 @@ paths:
             application/fhir+json:
               schema:
                 $ref: '#/components/schemas/FHIRResource'
-    servers:
-    - url: https://fhir-ehr.cerner.com/r4
-      description: Cerner Millennium FHIR R4 production endpoint
-    - url: https://fhir-open.cerner.com/r4
-      description: Cerner Millennium FHIR R4 sandbox endpoint
   /CapabilityStatement:
     get:
       operationId: readCapabilityStatement
@@ -52,11 +47,6 @@ paths:
             application/fhir+json:
               schema:
                 $ref: '#/components/schemas/FHIRResource'
-    servers:
-    - url: https://fhir-ehr.cerner.com/r4
-      description: Cerner Millennium FHIR R4 production endpoint
-    - url: https://fhir-open.cerner.com/r4
-      description: Cerner Millennium FHIR R4 sandbox endpoint
 components:
   schemas:
     FHIRResource:
@@ -88,6 +78,5 @@ components:
 externalDocs:
   description: Oracle Health Millennium FHIR R4 Documentation
   url: https://docs.oracle.com/en/industries/health/millennium-platform-apis/mfrap/r4_overview.html
-x-refined-from:
-- cerner-oracle-health-fhir-r4-api-openapi.yml
-- cerner-capability-api-openapi.yml
+x-generated-from: https://docs.oracle.com/en/industries/health/millennium-platform-apis/mfrap/r4_overview.html
+x-generated-by: claude-crawl-2026-05-08

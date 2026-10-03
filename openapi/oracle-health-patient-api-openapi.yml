@@ -8,9 +8,8 @@ info:
   - x-derived-from differs across the merged source definitions and was not carried
   - x-fhir-instantiates differs across the merged source definitions and was not carried
   - x-fhir-patch-formats differs across the merged source definitions and was not carried
-  - x-refined-note differs across the merged source definitions and was not carried
   version: '1.0'
-  description: 'Operations tagged Patient across 3 of this provider''s published API definitions: cerner-millennium-fhir-r4-openapi.yml, cerner-oracle-health-fhir-r4-api-openapi.yml, cerner-patient-api-openapi.yml. Each path carries the servers of the definition it was published in.'
+  description: 'Operations tagged Patient across 2 of this provider''s published API definitions: cerner-millennium-fhir-r4-openapi.yml, cerner-oracle-health-fhir-r4-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://fhir-ehr-code.cerner.com/r4/{tenant}
   description: Secure endpoint for provider / non-patient personas (also the secure sandbox).
@@ -386,20 +385,8 @@ components:
         application/fhir+json:
           schema:
             $ref: '#/components/schemas/OperationOutcome'
-    Error409:
-      description: Conflict — an update was attempted against an out-of-date version.
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/OperationOutcome'
-    Error400:
-      description: Bad Request — a required search parameter was omitted. The server responds "No supported search parameters provided".
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/OperationOutcome'
-    Error404:
-      description: Not Found — the resource does not exist.
+    Error500:
+      description: Internal Server Error — including a response that is missing a field FHIR requires (OperationOutcome severity `fatal`, code `required`).
       content:
         application/fhir+json:
           schema:
@@ -410,10 +397,22 @@ components:
         application/fhir+json:
           schema:
             $ref: '#/components/schemas/OperationOutcome'
+    Error409:
+      description: Conflict — an update was attempted against an out-of-date version.
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/OperationOutcome'
+    Error404:
+      description: Not Found — the resource does not exist.
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/OperationOutcome'
     Error406:
       description: 'Not Acceptable — a non-JSON media type was requested. Returned with `Content-Length: 0`.'
-    Error500:
-      description: Internal Server Error — including a response that is missing a field FHIR requires (OperationOutcome severity `fatal`, code `required`).
+    Error400:
+      description: Bad Request — a required search parameter was omitted. The server responds "No supported search parameters provided".
       content:
         application/fhir+json:
           schema:
@@ -425,6 +424,41 @@ components:
           schema:
             $ref: '#/components/schemas/FHIRResource'
   schemas:
+    OperationOutcome:
+      type: object
+      description: FHIR R4 OperationOutcome — the error envelope for every non-2xx response.
+      properties:
+        resourceType:
+          const: OperationOutcome
+        issue:
+          type: array
+          items:
+            type: object
+            properties:
+              severity:
+                type: string
+                examples:
+                - fatal
+                - error
+                - warning
+                - information
+              code:
+                type: string
+                examples:
+                - required
+                - business-rule
+                - extension
+                - not-supported
+              location:
+                type: array
+                items:
+                  type: string
+              diagnostics:
+                type: string
+      required:
+      - resourceType
+      - issue
+      additionalProperties: true
     Resource:
       type: object
       description: A FHIR R4 resource. The wire format is `application/fhir+json`; element-level schemas are defined by HL7 FHIR R4 (4.0.1), not by this document.
@@ -472,40 +506,14 @@ components:
       - resourceType
       - type
       additionalProperties: true
-    OperationOutcome:
+    FHIRResource:
       type: object
-      description: FHIR R4 OperationOutcome — the error envelope for every non-2xx response.
+      description: A generic FHIR R4 resource.
       properties:
         resourceType:
-          const: OperationOutcome
-        issue:
-          type: array
-          items:
-            type: object
-            properties:
-              severity:
-                type: string
-                examples:
-                - fatal
-                - error
-                - warning
-                - information
-              code:
-                type: string
-                examples:
-                - required
-                - business-rule
-                - extension
-                - not-supported
-              location:
-                type: array
-                items:
-                  type: string
-              diagnostics:
-                type: string
-      required:
-      - resourceType
-      - issue
+          type: string
+        id:
+          type: string
       additionalProperties: true
     FHIRBundle:
       type: object
@@ -523,15 +531,6 @@ components:
           items:
             type: object
             additionalProperties: true
-      additionalProperties: true
-    FHIRResource:
-      type: object
-      description: A generic FHIR R4 resource.
-      properties:
-        resourceType:
-          type: string
-        id:
-          type: string
       additionalProperties: true
   securitySchemes:
     smartOnFhir:
@@ -868,4 +867,3 @@ components:
 x-refined-from:
 - cerner-millennium-fhir-r4-openapi.yml
 - cerner-oracle-health-fhir-r4-api-openapi.yml
-- cerner-patient-api-openapi.yml

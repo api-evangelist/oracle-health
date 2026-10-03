@@ -1,7 +1,9 @@
 openapi: 3.2.0
 info:
-  title: Oracle Health Jobs API
+  title: Oracle Health Millennium Platform FHIR R4 Bulk Data Access…
   version: '1.0'
+  summary: HL7 FHIR Bulk Data Access (Flat FHIR) export for Oracle Health Millennium Platform.
+  description: Asynchronous bulk export of Millennium EHR data as newline-delimited FHIR (NDJSON), following the HL7 FHIR Bulk Data Access (Flat FHIR) implementation guide.
   contact:
     name: Oracle Health Developer Program
     url: https://www.oracle.com/health/developer/
@@ -9,7 +11,6 @@ info:
     docs: https://docs.oracle.com/en/industries/health/millennium-platform-apis/mfbda/rest-endpoints.html
     fetched: '2026-08-14'
     note: Paths and methods are verbatim from the provider's REST Endpoints page. Request/response bodies, headers and status codes are not published on that page and are therefore NOT modelled here beyond what the Bulk Data Access IG mandates and the page states; they are left open rather than guessed.
-  description: 'Operations tagged Jobs across 2 of this provider''s published API definitions: cerner-millennium-bulk-data-openapi.yml, cerner-jobs-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://fhir-ehr.cerner.com/r4/{tenant}
   description: Production FHIR service root.
@@ -61,19 +62,6 @@ paths:
           description: Delete accepted.
         '404':
           $ref: '#/components/responses/OperationOutcome'
-    servers:
-    - url: https://fhir-ehr.cerner.com/r4/{tenant}
-      description: Production FHIR service root.
-      variables:
-        tenant:
-          default: ec2458f2-1e24-41c8-b71b-0e701af7583d
-          description: Millennium tenant id. The default is the Oracle Health public sandbox tenant.
-    - url: https://fhir-ehr-code.cerner.com/r4/{tenant}
-      description: Secure sandbox FHIR service root.
-      variables:
-        tenant:
-          default: ec2458f2-1e24-41c8-b71b-0e701af7583d
-          description: Millennium tenant id.
 components:
   schemas:
     OperationOutcome:
@@ -117,6 +105,3 @@ components:
 externalDocs:
   description: Oracle Health FHIR R4 Bulk Data Access APIs
   url: https://docs.oracle.com/en/industries/health/millennium-platform-apis/mfbda/index.html
-x-refined-from:
-- cerner-millennium-bulk-data-openapi.yml
-- cerner-jobs-api-openapi.yml
