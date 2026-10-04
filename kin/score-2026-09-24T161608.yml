@@ -1,21 +1,19 @@
-# Kin Score artifact — cerner — 2026-09-01T063623
+# Kin Score artifact — oracle-health — 2026-09-24T161608
 # The API Evangelist rating (https://github.com/api-evangelist/kin-score). Generated; do not edit.
 ---
 kin_score:
-  slug: cerner
-  schema_version: 0.17.2
-  scored_at: '2026-09-01'
-  run_ts: 2026-09-01T063623
-  composite: 59.6
-  band: strong
+  slug: oracle-health
+  schema_version: 0.22.0
+  scored_at: '2026-09-24'
+  run_ts: 2026-09-24T161608
+  composite: 49.6
+  band: developing
   facets:
     discoverability: 75.9
-    contract_quality: 60.8
-    governance: 18.2
-    operational_transparency: 18.4
-    developer_ergonomics: 68.5
-    commercial_clarity: 44.7
+    contract_quality: 20.5
     contract_governance: 18.2
+    operational_transparency: 21.1
+    developer_ergonomics: 70.8
     access_clarity: 44.7
   agent_readiness:
     score: 28.6
@@ -52,7 +50,7 @@ kin_score:
     agentic_access: derived
     conformance: first-party
     contracts:
-      total: 9
-      derived: 0
-      coverage: 0.0
+      total: 53
+      derived: 49
+      coverage: 92.5
       callable: 100.0
