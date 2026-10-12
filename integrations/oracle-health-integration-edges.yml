@@ -1,0 +1,20 @@
+generated: '2026-10-12'
+method: searched
+edges: []
+marketplace_apps:
+- marketplace: fhir-endpoint-directory
+  channel: provider-built
+  app: oracle-health
+  url: https://raw.githubusercontent.com/oracle-samples/ignite-endpoints/main/oracle_health_fhir_endpoints/millennium_patient_r4_endpoints.json
+  app_count: 2730
+  adapter: sweep-fhir-structure.py
+  capability_sample:
+    probed: 40
+    answered: 40
+    fhirVersions:
+      4.0.1: 40
+    smart_on_fhir: 40
+    median_resource_types: 44
+checked:
+- https://raw.githubusercontent.com/oracle-samples/ignite-endpoints/main/oracle_health_fhir_endpoints/millennium_patient_r4_endpoints.json
+- https://raw.githubusercontent.com/oracle-samples/ignite-endpoints/main/oracle_health_fhir_endpoints/millennium_provider_r4_endpoints.json
