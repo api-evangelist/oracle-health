@@ -2,16 +2,16 @@
 kin_checks:
   slug: oracle-health
   schema_version: 0.23.0
-  scored_at: '2026-10-03'
-  run_ts: 2026-10-03T024842
+  scored_at: '2026-10-11'
+  run_ts: 2026-10-11T110117
   note: Actionable checks (missed + partial) in `checks`, plus the ids that did not
     apply in `na`. Everything else in rubric/scoring-0.23.0.yml was earned; counts
     below let you verify that.
   counts:
     total: 153
-    earned: 39
-    partial: 25
-    missed: 67
+    earned: 38
+    partial: 24
+    missed: 69
     na: 22
   checks:
   - id: newsroom_present
@@ -19,6 +19,8 @@ kin_checks:
   - id: leadership_present
     status: missed
   - id: well_known_published
+    status: missed
+  - id: llms_txt_published
     status: missed
   - id: apis_json_self_hosted
     status: missed
@@ -49,6 +51,8 @@ kin_checks:
   - id: json_ld_class_depth
     status: missed
   - id: json_ld_property_depth
+    status: missed
+  - id: lifecycle_documented
     status: missed
   - id: domain_standard_conformance
     status: missed
@@ -235,9 +239,6 @@ kin_checks:
     earned: 1.0
     detail: 50 of 50 openapi documents pass; credited at 25% because the documents
       were derived by API Evangelist from what the provider published
-  - id: lifecycle_documented
-    status: partial
-    earned: 0.76
   - id: agent_skill_present
     status: partial
     earned: 0.75
