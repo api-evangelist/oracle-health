@@ -230,87 +230,7 @@ paths:
           default: ec2458f2-1e24-41c8-b71b-0e701af7583d
           description: Millennium tenant id.
 components:
-  responses:
-    Error401:
-      description: Unauthorized — no valid credentials were supplied to a secure endpoint.
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/OperationOutcome'
-    Error403:
-      description: Forbidden — unknown instance or the caller is not authorized for this tenant ("Tenant not valid or accessible").
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/OperationOutcome'
-    Error500:
-      description: Internal Server Error — including a response that is missing a field FHIR requires (OperationOutcome severity `fatal`, code `required`).
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/OperationOutcome'
-    Error422:
-      description: Unprocessable Entity — syntactically valid JSON that violates a business rule, carries unsupported fields, modifier extensions, or implicit rules.
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/OperationOutcome'
-    Error404:
-      description: Not Found — the resource does not exist.
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/OperationOutcome'
-    Error406:
-      description: 'Not Acceptable — a non-JSON media type was requested. Returned with `Content-Length: 0`.'
-    Error400:
-      description: Bad Request — a required search parameter was omitted. The server responds "No supported search parameters provided".
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/OperationOutcome'
-    Unauthorized:
-      description: Authentication credentials are missing or invalid.
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/FHIRResource'
   schemas:
-    OperationOutcome:
-      type: object
-      description: FHIR R4 OperationOutcome — the error envelope for every non-2xx response.
-      properties:
-        resourceType:
-          const: OperationOutcome
-        issue:
-          type: array
-          items:
-            type: object
-            properties:
-              severity:
-                type: string
-                examples:
-                - fatal
-                - error
-                - warning
-                - information
-              code:
-                type: string
-                examples:
-                - required
-                - business-rule
-                - extension
-                - not-supported
-              location:
-                type: array
-                items:
-                  type: string
-              diagnostics:
-                type: string
-      required:
-      - resourceType
-      - issue
-      additionalProperties: true
     Resource:
       type: object
       description: A FHIR R4 resource. The wire format is `application/fhir+json`; element-level schemas are defined by HL7 FHIR R4 (4.0.1), not by this document.
@@ -358,6 +278,41 @@ components:
       - resourceType
       - type
       additionalProperties: true
+    OperationOutcome:
+      type: object
+      description: FHIR R4 OperationOutcome — the error envelope for every non-2xx response.
+      properties:
+        resourceType:
+          const: OperationOutcome
+        issue:
+          type: array
+          items:
+            type: object
+            properties:
+              severity:
+                type: string
+                examples:
+                - fatal
+                - error
+                - warning
+                - information
+              code:
+                type: string
+                examples:
+                - required
+                - business-rule
+                - extension
+                - not-supported
+              location:
+                type: array
+                items:
+                  type: string
+              diagnostics:
+                type: string
+      required:
+      - resourceType
+      - issue
+      additionalProperties: true
     FHIRResource:
       type: object
       description: A generic FHIR R4 resource.
@@ -384,6 +339,51 @@ components:
             type: object
             additionalProperties: true
       additionalProperties: true
+  responses:
+    Error401:
+      description: Unauthorized — no valid credentials were supplied to a secure endpoint.
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/OperationOutcome'
+    Error422:
+      description: Unprocessable Entity — syntactically valid JSON that violates a business rule, carries unsupported fields, modifier extensions, or implicit rules.
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/OperationOutcome'
+    Error400:
+      description: Bad Request — a required search parameter was omitted. The server responds "No supported search parameters provided".
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/OperationOutcome'
+    Error403:
+      description: Forbidden — unknown instance or the caller is not authorized for this tenant ("Tenant not valid or accessible").
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/OperationOutcome'
+    Error500:
+      description: Internal Server Error — including a response that is missing a field FHIR requires (OperationOutcome severity `fatal`, code `required`).
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/OperationOutcome'
+    Error406:
+      description: 'Not Acceptable — a non-JSON media type was requested. Returned with `Content-Length: 0`.'
+    Error404:
+      description: Not Found — the resource does not exist.
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/OperationOutcome'
+    Unauthorized:
+      description: Authentication credentials are missing or invalid.
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/FHIRResource'
   securitySchemes:
     smartOnFhir:
       type: oauth2

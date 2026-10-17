@@ -127,14 +127,14 @@ components:
           type: string
       additionalProperties: true
   responses:
-    NotFound:
-      description: The requested resource was not found.
+    Unauthorized:
+      description: Authentication credentials are missing or invalid.
       content:
         application/fhir+json:
           schema:
             $ref: '#/components/schemas/FHIRResource'
-    Unauthorized:
-      description: Authentication credentials are missing or invalid.
+    NotFound:
+      description: The requested resource was not found.
       content:
         application/fhir+json:
           schema:

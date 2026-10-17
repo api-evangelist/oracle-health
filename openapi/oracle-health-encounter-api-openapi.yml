@@ -306,8 +306,26 @@ paths:
           description: Millennium tenant id.
 components:
   responses:
+    Error409:
+      description: Conflict — an update was attempted against an out-of-date version.
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/OperationOutcome'
     Error401:
       description: Unauthorized — no valid credentials were supplied to a secure endpoint.
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/OperationOutcome'
+    Error422:
+      description: Unprocessable Entity — syntactically valid JSON that violates a business rule, carries unsupported fields, modifier extensions, or implicit rules.
+      content:
+        application/fhir+json:
+          schema:
+            $ref: '#/components/schemas/OperationOutcome'
+    Error400:
+      description: Bad Request — a required search parameter was omitted. The server responds "No supported search parameters provided".
       content:
         application/fhir+json:
           schema:
@@ -324,28 +342,10 @@ components:
         application/fhir+json:
           schema:
             $ref: '#/components/schemas/OperationOutcome'
-    Error422:
-      description: Unprocessable Entity — syntactically valid JSON that violates a business rule, carries unsupported fields, modifier extensions, or implicit rules.
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/OperationOutcome'
-    Error409:
-      description: Conflict — an update was attempted against an out-of-date version.
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/OperationOutcome'
-    Error404:
-      description: Not Found — the resource does not exist.
-      content:
-        application/fhir+json:
-          schema:
-            $ref: '#/components/schemas/OperationOutcome'
     Error406:
       description: 'Not Acceptable — a non-JSON media type was requested. Returned with `Content-Length: 0`.'
-    Error400:
-      description: Bad Request — a required search parameter was omitted. The server responds "No supported search parameters provided".
+    Error404:
+      description: Not Found — the resource does not exist.
       content:
         application/fhir+json:
           schema:
@@ -357,41 +357,6 @@ components:
           schema:
             $ref: '#/components/schemas/FHIRResource'
   schemas:
-    OperationOutcome:
-      type: object
-      description: FHIR R4 OperationOutcome — the error envelope for every non-2xx response.
-      properties:
-        resourceType:
-          const: OperationOutcome
-        issue:
-          type: array
-          items:
-            type: object
-            properties:
-              severity:
-                type: string
-                examples:
-                - fatal
-                - error
-                - warning
-                - information
-              code:
-                type: string
-                examples:
-                - required
-                - business-rule
-                - extension
-                - not-supported
-              location:
-                type: array
-                items:
-                  type: string
-              diagnostics:
-                type: string
-      required:
-      - resourceType
-      - issue
-      additionalProperties: true
     Resource:
       type: object
       description: A FHIR R4 resource. The wire format is `application/fhir+json`; element-level schemas are defined by HL7 FHIR R4 (4.0.1), not by this document.
@@ -438,6 +403,41 @@ components:
       required:
       - resourceType
       - type
+      additionalProperties: true
+    OperationOutcome:
+      type: object
+      description: FHIR R4 OperationOutcome — the error envelope for every non-2xx response.
+      properties:
+        resourceType:
+          const: OperationOutcome
+        issue:
+          type: array
+          items:
+            type: object
+            properties:
+              severity:
+                type: string
+                examples:
+                - fatal
+                - error
+                - warning
+                - information
+              code:
+                type: string
+                examples:
+                - required
+                - business-rule
+                - extension
+                - not-supported
+              location:
+                type: array
+                items:
+                  type: string
+              diagnostics:
+                type: string
+      required:
+      - resourceType
+      - issue
       additionalProperties: true
     FHIRResource:
       type: object
