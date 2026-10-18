@@ -8,7 +8,6 @@ tags:
 - Cerner Millennium
 - Clinical Data
 - Code Console
-- EHR
 - Electronic Health Records
 - FHIR
 - Fortune 1000
@@ -1799,6 +1798,8 @@ apis:
   humanURL: https://fhir.cerner.com/millennium/dstu2/
   baseURL: https://fhir-ehr.cerner.com/dstu2/{tenant}
   tags:
+  - AllergyIntolerance
+  tags_raw:
   - Allergy Intolerance
   properties:
   - type: OpenAPI
@@ -1837,6 +1838,8 @@ apis:
   humanURL: https://fhir.cerner.com/millennium/dstu2/
   baseURL: https://fhir-ehr.cerner.com/dstu2/{tenant}
   tags:
+  - CapabilityStatement
+  tags_raw:
   - Capability Statement
   properties:
   - type: OpenAPI
@@ -1874,6 +1877,8 @@ apis:
   humanURL: https://fhir.cerner.com/millennium/dstu2/
   baseURL: https://fhir-ehr.cerner.com/dstu2/{tenant}
   tags:
+  - CarePlan
+  tags_raw:
   - Care plan
   properties:
   - type: OpenAPI
@@ -1911,6 +1916,8 @@ apis:
   humanURL: https://fhir.cerner.com/millennium/dstu2/
   baseURL: https://fhir-ehr.cerner.com/dstu2/{tenant}
   tags:
+  - DocumentReference
+  tags_raw:
   - Document Reference
   properties:
   - type: OpenAPI
@@ -1948,6 +1955,8 @@ apis:
   humanURL: https://fhir.cerner.com/millennium/dstu2/
   baseURL: https://fhir-ehr.cerner.com/dstu2/{tenant}
   tags:
+  - InsurancePlan
+  tags_raw:
   - Insurance Plan
   properties:
   - type: OpenAPI
@@ -1986,6 +1995,8 @@ apis:
   humanURL: https://fhir.cerner.com/millennium/dstu2/
   baseURL: https://fhir-ehr.cerner.com/dstu2/{tenant}
   tags:
+  - MedicationAdministration
+  tags_raw:
   - Medication Administration
   properties:
   - type: OpenAPI
@@ -2023,6 +2034,8 @@ apis:
   humanURL: https://fhir.cerner.com/millennium/dstu2/
   baseURL: https://fhir-ehr.cerner.com/dstu2/{tenant}
   tags:
+  - MedicationRequest
+  tags_raw:
   - Medication Request
   properties:
   - type: OpenAPI
