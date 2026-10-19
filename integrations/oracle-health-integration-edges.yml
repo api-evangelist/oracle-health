@@ -1,6 +1,66 @@
 generated: '2026-10-12'
 method: searched
-edges: []
+edges:
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@cerner/carbon-graphs
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@cerner/carbon-graphs'
+      version: 2.25.0
+      released: '2024-04-09'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@cerner/carbon-graphs
+      repo_leg: github-org:cerner
+      publisher_leg: org:cerner
+      matched_by: github-org
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+- partner_name: RubyGems
+  partner: rubygems
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (Ruby)
+  evidence: https://rubygems.org/gems/cerner-oauth1a
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: RubyGems (public registry JSON)
+    spec_file: null
+    language: Ruby
+    packages:
+    - name: cerner-oauth1a
+      version: 2.5.4
+      released: '2021-06-28'
+      released_field: version_created_at
+      lapsed: true
+      page: https://rubygems.org/gems/cerner-oauth1a
+      repo_leg: github-org:cerner
+      publisher_leg: org:cerner
+      matched_by: github-org
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 marketplace_apps:
 - marketplace: fhir-endpoint-directory
   channel: provider-built
@@ -16,5 +76,20 @@ marketplace_apps:
     smart_on_fhir: 40
     median_resource_types: 44
 checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
 - https://raw.githubusercontent.com/oracle-samples/ignite-endpoints/main/oracle_health_fhir_endpoints/millennium_patient_r4_endpoints.json
 - https://raw.githubusercontent.com/oracle-samples/ignite-endpoints/main/oracle_health_fhir_endpoints/millennium_provider_r4_endpoints.json
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
+source:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
