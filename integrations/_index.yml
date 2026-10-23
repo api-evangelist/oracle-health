@@ -65,3 +65,79 @@
     detected: '2026-10-18'
   status: not-a-workflow
   arazzo: null
+- slug: oracle-health-tx-ramp
+  label: TX-RAMP
+  partner_name: TX-RAMP
+  category: Texas state cloud security certification (TX-RAMP)
+  type: contract
+  channel: regulator-register
+  evidence: https://dir.texas.gov/resource-library-item/tx-ramp-certified-cloud-products
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: TX-RAMP Certified Cloud Products (Texas DIR)
+    standard: TX-RAMP
+    spec_file: null
+    role: tx-ramp-certified
+    register_file: https://dir.texas.gov/sites/default/files/2026-10/Copy%20of%20TX-RAMP%20Certified%20Cloud%20Products_1.xlsx
+    registrations:
+    - certification_id: TX1319192
+      product: Cerner Millennium
+      registered_vendor: Cerner Corporation
+      certification_level: Level 2
+      cloud_categories:
+      - SaaS
+      certification_path: TX-RAMP Fast Track
+      expires: '2027-12-03'
+      lapsed: false
+      matched_domain: null
+      matched_by: local-verified
+    - certification_id: TX1600823
+      product: Oracle Health (Cerner) CareAware
+      registered_vendor: Cerner Corporation
+      certification_level: Level 2
+      cloud_categories:
+      - SaaS
+      certification_path: TX-RAMP Fast Track
+      expires: '2027-12-18'
+      lapsed: false
+      matched_domain: null
+      matched_by: local-verified
+    - certification_id: TX1600846
+      product: Oracle Health Data Intelligence (Formerly HealtheIntent)
+      registered_vendor: Cerner Corporation
+      certification_level: Level 2
+      cloud_categories:
+      - SaaS
+      certification_path: TX-RAMP Fast Track
+      expires: '2027-12-18'
+      lapsed: false
+      matched_domain: null
+      matched_by: local-verified
+    - certification_id: TX1600847
+      product: Oracle Health Patient Accounting (Formerly RevElate Patient Accounting)
+      registered_vendor: Cerner Corporation
+      certification_level: Level 2
+      cloud_categories:
+      - SaaS
+      certification_path: TX-RAMP Fast Track
+      expires: '2027-12-18'
+      lapsed: false
+      matched_domain: null
+      matched_by: local-verified
+    identity: Cerner is Oracle Health; all/oracle-health is 'Oracle Health (Cerner)' and holds cerner.com
+    identity_source: hand-verified (LOCAL_VERIFIED)
+    signal_note: 'certified_products = one entry per cloud category (SaaS / PaaS / IaaS) the vendor holds a TX-RAMP
+      certification in, never per product; products are context, never counted. certification_level = the highest
+      level in that category; lapsed: true when every product in the category is past its expiry date. partner_tier
+      = the highest CURRENT level'
+    certified_products:
+    - product: SaaS
+      product_type: SaaS
+      standard: TX-RAMP
+      certification_level: Level 2
+      lapsed: false
+    detected_by: sweep-tx-ramp-certified-cloud.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
