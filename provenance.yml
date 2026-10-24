@@ -10,14 +10,14 @@ artifacts:
     method: derived
     evidence: declared in the artifact
   arazzo/cerner-clinical-resource-write-workflow.yml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: Arazzo whose sourceDescriptions are our split specs (../openapi/)
   arazzo/cerner-conformance-discovery-workflow.yml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: Arazzo whose sourceDescriptions are our split specs (../openapi/)
   arazzo/cerner-smart-on-fhir-patient-data-retrieval-workflow.yml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: Arazzo whose sourceDescriptions are our split specs (../openapi/)
   authentication/cerner-authentication.yml:
     method: unknown
     evidence: no authorship recorded
@@ -28,35 +28,35 @@ artifacts:
     method: searched
     evidence: declared in the artifact
   collections/cerner-capability-api.opencollection.json:
-    method: derived
-    evidence: openapi/cerner-capability-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-capability-api.postman_collection.json:
-    method: derived
-    evidence: openapi/cerner-capability-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-condition-api.opencollection.json:
-    method: derived
-    evidence: openapi/cerner-condition-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-condition-api.postman_collection.json:
-    method: derived
-    evidence: openapi/cerner-condition-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-definitions-api.opencollection.json:
-    method: derived
-    evidence: openapi/cerner-definitions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-definitions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/cerner-definitions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-encounter-api.opencollection.json:
-    method: derived
-    evidence: openapi/cerner-encounter-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-encounter-api.postman_collection.json:
-    method: derived
-    evidence: openapi/cerner-encounter-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-generic-api.opencollection.json:
-    method: derived
-    evidence: openapi/cerner-generic-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-generic-api.postman_collection.json:
-    method: derived
-    evidence: openapi/cerner-generic-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-oracle-health-fhir-r4-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -64,17 +64,17 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/cerner-patient-api.opencollection.json:
-    method: derived
-    evidence: openapi/cerner-patient-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-patient-api.postman_collection.json:
-    method: derived
-    evidence: openapi/cerner-patient-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-procedure-api.opencollection.json:
-    method: derived
-    evidence: openapi/cerner-procedure-api
+    method: unknown
+    evidence: no authorship recorded
   collections/cerner-procedure-api.postman_collection.json:
-    method: derived
-    evidence: openapi/cerner-procedure-api
+    method: unknown
+    evidence: no authorship recorded
   components/cerner-components.yml:
     method: searched
     evidence: declared in the artifact
@@ -102,133 +102,13 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-21T233935.yml:
+  integrations/_index.yml:
     method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-24T064859.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-24T171257.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T125852.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T133943.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T143147.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T154045.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-26T215308.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T094438.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T103455.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T123021.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T132314.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T140727.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-28T221322.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T213958.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T230545.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T203505.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T220315.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-31T223420.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T063623.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T210448.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T222808.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T224043.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T161828.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T174231.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T062714.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T212454.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T224856.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T055819.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T144739.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T195450.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T211839.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T011047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T224210.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T200636.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T213054.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T214843.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T232836.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T204815.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T222408.yml:
+    evidence: carries an API Evangelist house phrase
+  integrations/oracle-health-integration-edges.yml:
+    method: searched
+    evidence: declared in the artifact
+  kin/checks-2026-10-11T110117.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-12T062655.yml:
@@ -297,6 +177,36 @@ artifacts:
   kin/score-2026-09-21T233935.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-22T213221.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-23T000603.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-24T064009.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-24T090406.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-24T161608.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T210408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T232841.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T000835.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T024842.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-11T110117.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   lifecycle/cerner-lifecycle.yml:
     method: searched
     evidence: declared in the artifact
@@ -306,183 +216,383 @@ artifacts:
   mcp/cerner-mcp.yml:
     method: derived
     evidence: declared in the artifact
-  openapi/cerner-account-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-allergy-intolerance-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-appointment-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-basic-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-binary-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-capability-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-capability-statement-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-care-plan-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-careteam-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-chargeitem-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-communication-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-condition-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-consent-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-coverage-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-definitions-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-device-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-diagnosticreport-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-document-reference-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-encounter-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-export-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-familymemberhistory-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-files-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-generic-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-goal-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-immunization-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-insurance-plan-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-jobs-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-location-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-media-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-medication-administration-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-medication-request-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-medicationdispense-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-nutritionorder-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-observation-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-operationdefinition-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-organization-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-patient-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-person-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-practitioner-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-procedure-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-provenance-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-questionnaire-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-questionnaireresponse-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-relatedperson-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-schedule-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-servicerequest-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-slot-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-specimen-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-structuredefinition-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
-  openapi/cerner-system-api-openapi.yml:
-    method: unknown
-    evidence: no authorship recorded
+  openapi/_original/cerner-account-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-allergy-intolerance-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-appointment-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-basic-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-binary-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-capability-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-capability-statement-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-care-plan-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-careteam-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-chargeitem-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-communication-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-condition-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-consent-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-coverage-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-definitions-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-device-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-diagnosticreport-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-document-reference-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-encounter-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-export-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-familymemberhistory-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-files-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-generic-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-goal-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-immunization-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-insurance-plan-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-jobs-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-location-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-media-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-medication-administration-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-medication-request-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-medicationdispense-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-nutritionorder-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-observation-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-operationdefinition-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-organization-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-patient-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-person-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-practitioner-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-procedure-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-provenance-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-questionnaire-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-questionnaireresponse-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-relatedperson-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-schedule-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-servicerequest-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-slot-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-specimen-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-structuredefinition-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/cerner-system-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/oracle-health-account-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-allergy-intolerance-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-appointment-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-basic-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-binary-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-capability-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-capability-statement-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-care-plan-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-careteam-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-chargeitem-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-communication-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-condition-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-consent-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-coverage-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-definitions-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-device-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-diagnosticreport-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-document-reference-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-encounter-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-export-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-familymemberhistory-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-files-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-generic-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-goal-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-immunization-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-insurance-plan-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-jobs-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-location-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-media-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-medication-administration-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-medication-request-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-medicationdispense-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-nutritionorder-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-observation-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-operationdefinition-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-organization-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-patient-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-person-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-practitioner-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-procedure-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-provenance-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-questionnaire-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-questionnaireresponse-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-relatedperson-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-schedule-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-servicerequest-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-slot-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-specimen-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-structuredefinition-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  openapi/oracle-health-system-api-openapi.yml:
+    method: derived
+    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   overlays/cerner-capability-api-overlay.yaml:
-    method: generated
-    evidence: declared in the artifact
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/cerner-condition-api-overlay.yaml:
-    method: generated
-    evidence: declared in the artifact
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/cerner-definitions-api-overlay.yaml:
-    method: generated
-    evidence: declared in the artifact
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/cerner-encounter-api-overlay.yaml:
-    method: generated
-    evidence: declared in the artifact
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/cerner-generic-api-overlay.yaml:
-    method: generated
-    evidence: declared in the artifact
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/cerner-millennium-bulk-data-overlay.yaml:
-    method: generated
-    evidence: declared in the artifact
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/cerner-millennium-fhir-r4-overlay.yaml:
-    method: generated
-    evidence: declared in the artifact
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/cerner-patient-api-overlay.yaml:
-    method: generated
-    evidence: declared in the artifact
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/cerner-procedure-api-overlay.yaml:
-    method: generated
-    evidence: declared in the artifact
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   packages/cerner-packages.yml:
     method: searched
     evidence: declared in the artifact
